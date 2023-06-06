@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    background-color: blueviolet;
+    overflow: hidden;
+}
+.main{
+    padding: 15px;
+}
+.header{
+    height: 15vh;
+    width: 100%;
+    background-color: darkseagreen;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content{
+    display: flex;
+}
+.aside{
+    width: 35%;
+    height: 75vh;
+    background-color: darkcyan;
+    text-align: center;
+    margin-right: 20px;
+    text-align: center;
+}
+.article{
+    width: 65%;
+    height: 75vh;
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.article-inside{
+    display: flex;
+    margin: 15px;
+    gap: 25px;
+}
+.image{
+    text-align: center;
+    height: 25vh;
+    width: 33%;
+    background-color: deepskyblue;
+}

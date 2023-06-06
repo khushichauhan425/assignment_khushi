@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Music Player</title>
+    <style>
+        #music-player{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="music-player">
+        <h2>Music Player</h2>
+        <div class="top">
+            <img src="./assets/image.jpg" alt="music_picture">
+            <audio id="audio-player">
+                <source src="./assets/viyn-cotton-candy-loop-version-13253.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="buttons">
+            <button id="play-btn">Play</button>
+            <button id="pause-btn">Pause</button>
+            <button id="stop-btn">Stop</button>
+        </div>
+    </div>
+    <script>
+        var audioPlayer = document.getElementById('audio-player');
+        var playBtn = document.getElementById('play-btn');
+        var pauseBtn = document.getElementById('pause-btn');
+        var stopBtn = document.getElementById('stop-btn');
+
+        playBtn.addEventListener('click',function(){
+            audioPlayer.play();
+        });
+
+        pauseBtn.addEventListener('click',function(){
+            audioPlayer.pause();
+        });
+
+        stopBtn.addEventListener('click',function(){
+            audioPlayer.pause();
+            audioPlayer.currentTime=0;
+        });
+    </script>
+</body>
+</html>
